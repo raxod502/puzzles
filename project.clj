@@ -1,4 +1,9 @@
 (defproject puzzles "0.1.0-SNAPSHOT"
   :description "Solvers for KenKen and Sudoku puzzles."
-  :dependencies [[org.clojure/clojure "1.8.0"]]
+  :dependencies [;; Language
+                 [org.clojure/clojure "1.8.0"]
+
+                 ;; Website
+                 [compojure "1.5.1"]
+                 [ring/ring-jetty-adapter "1.5.0"]]
   :main puzzles.core)
