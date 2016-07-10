@@ -1,5 +1,7 @@
 # puzzles
 
+[![Build Status](https://travis-ci.org/raxod502/puzzles.svg?branch=master)](https://travis-ci.org/raxod502/puzzles)
+
 ## Summary
 
 This library contains parsers and solvers for KenKen (`puzzles.kenken`) and Sudoku (`puzzles.sudoku`) puzzles.
