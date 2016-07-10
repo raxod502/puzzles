@@ -20,7 +20,7 @@ puzzles.core> (println sample-kenken/sample-4x4)
   |   +---+---+---+
   | / | 7   + | 2 |
   +---+-------+---+
-  
+
 nil
 puzzles.core> (println (kenken/solve sample-kenken/sample-4x4))
 3124
@@ -41,17 +41,17 @@ puzzles.core> (println sample-sudoku/sample-1)
   .8. .3. 9..
   ... 7.. 1.6
   .64 .2. ..3
-  
+
 nil
 puzzles.core> (println (sudoku/solve sample-sudoku/sample-1))
 216 598 437
 493 617 258
 857 342 619
-           
+
 945 163 782
 138 279 564
 672 854 391
-           
+
 781 436 925
 329 785 146
 564 921 873
