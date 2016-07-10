@@ -2,6 +2,7 @@
   (:require [compojure.core :refer [defroutes GET PUT POST DELETE ANY]]
             [compojure.handler :as handler]
             [compojure.route :as route]
+            [environ.core :refer [env]]
             [ring.adapter.jetty :as jetty]))
 
 (defroutes app
@@ -16,14 +17,15 @@
     (.stop server)))
 
 (defn start
-  []
+  [& [port]]
   (stop)
   (alter-var-root
     #'server
     (constantly
       (jetty/run-jetty (handler/site #'app)
-                       {:port 5812 :join? false}))))
+                       {:port (Long. (or port (env :port) 5000))
+                        :join? false}))))
 
 (defn -main
-  [& args]
-  (start))
+  [& [port]]
+  (start port))
