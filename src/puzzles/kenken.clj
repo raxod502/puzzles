@@ -57,8 +57,8 @@
 
 (defn kenken->vec
   "Converts a KenKen puzzle from a string into a vector. See
-  the sample puzzles above for the format, which must conform to
-  the following rules (among others):
+  the examples in puzzles.sample.kenken for the format, which
+  must conform to the following rules (among others):
   - The numbers and operations can be specified either within
     the grid, or separately. (Although the former looks prettier,
     the latter is much faster to enter.) If the numbers and
