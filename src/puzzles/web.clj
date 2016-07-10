@@ -8,14 +8,22 @@
   (GET "/" [] "<h1>Hello from Compojure!</h1>")
   (ANY "*" [] (route/not-found "<h1>Page not found</h1>")))
 
-(defn start-new-server
-  []
-  (jetty/run-jetty (handler/site #'app)
-                   {:port 5812 :join? false}))
+(defonce ^:dynamic server nil)
 
-(defonce ^:dynamic server (start-new-server))
-
-(defn restart-server
+(defn stop
   []
-  (.stop server)
-  (alter-var-root #'server (start-new-server)))
+  (if server
+    (.stop server)))
+
+(defn start
+  []
+  (stop)
+  (alter-var-root
+    #'server
+    (constantly
+      (jetty/run-jetty (handler/site #'app)
+                       {:port 5812 :join? false}))))
+
+(defn -main
+  [& args]
+  (start))
