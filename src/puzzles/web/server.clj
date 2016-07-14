@@ -1,4 +1,4 @@
-(ns puzzles.web
+(ns puzzles.web.server
   (:require [compojure.core :refer [defroutes GET PUT POST DELETE ANY]]
             [compojure.handler :as handler]
             [compojure.route :as route]
