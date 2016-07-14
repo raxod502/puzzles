@@ -10,14 +10,16 @@
 
 (def main-page
   [:html
-   [:head]
+   [:head
+    [:title "Puzzles"]]
    [:body
     [:div#app]
     (include-js "js/main.js")]])
 
 (def not-found-page
   [:html
-   [:head]
+   [:head
+    [:title "404 Not Found"]]
    [:body
     [:h1 "Page not found"]]])
 
