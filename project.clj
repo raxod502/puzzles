@@ -30,7 +30,7 @@
                                    :asset-path "js/out"}}]}
   :figwheel {:ring-handler puzzles.web.server/app}
 
-  :clean-targets ^{:protect false} ["resources"]
+  :clean-targets ^{:protect false} ["resources" "target"]
 
   :min-lein-version "2.0.0"
   :uberjar-name "puzzles-standalone.jar"
