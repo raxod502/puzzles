@@ -12,7 +12,11 @@
                  [ring/ring-jetty-adapter "1.5.0"]
 
                  ;; Client
-                 [reagent "0.5.1"]]
+                 [reagent "0.5.1"]
+
+                 ;; Emacs integration
+                 [com.cemerick/piggieback "0.2.1"]
+                 [figwheel-sidecar "0.5.2"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]
             [lein-figwheel "0.5.0-1"]]
