@@ -3,7 +3,8 @@
             [compojure.handler :as handler]
             [compojure.route :as route]
             [environ.core :refer [env]]
-            [ring.adapter.jetty :as jetty]))
+            [ring.adapter.jetty :as jetty])
+  (:gen-class))
 
 (defroutes app
   (GET "/" [] "<h1>Hello from Compojure!</h1>")

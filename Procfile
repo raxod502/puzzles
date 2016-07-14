@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/puzzles-standalone.jar clojure.main -m puzzles.web.server
+web: java $JVM_OPTS -jar target/puzzles-standalone.jar
