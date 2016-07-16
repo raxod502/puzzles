@@ -1,4 +1,4 @@
-(defproject puzzles "0.1.0-SNAPSHOT"
+(defproject raxod502/puzzles "0.1.0-SNAPSHOT"
   :description "Solvers for KenKen and Sudoku puzzles."
 
   :dependencies [;; Language
