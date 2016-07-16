@@ -34,7 +34,7 @@
 
 (defn stop
   []
-  (if server
+  (when server
     (.stop server)))
 
 (defn start
