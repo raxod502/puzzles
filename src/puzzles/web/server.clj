@@ -28,6 +28,8 @@
   (route/resources "/")
   (route/not-found (hiccup/html not-found-page)))
 
+(def site (handler/site app))
+
 (defonce ^:dynamic server nil)
 
 (defn stop
@@ -41,7 +43,7 @@
   (alter-var-root
     #'server
     (constantly
-      (jetty/run-jetty (handler/site #'app)
+      (jetty/run-jetty #'site
                        {:port (Long. (or port (env :port) 5000))
                         :join? false}))))
 

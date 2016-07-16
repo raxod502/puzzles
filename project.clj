@@ -28,7 +28,7 @@
                                    :output-to "resources/public/js/main.js"
                                    :output-dir "resources/public/js/out"
                                    :asset-path "js/out"}}]}
-  :figwheel {:ring-handler puzzles.web.server/app}
+  :figwheel {:ring-handler puzzles.web.server/site}
 
   :clean-targets ^{:protect false} ["resources" "target"]
 
