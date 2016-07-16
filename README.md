@@ -60,6 +60,4 @@ nil
 
 ## Development
 
-### Emacs integration
-
-First, you will need to make sure CIDER is all set up in your Emacs, at least for Clojure development. Then press `M-x customize-group` and enter `cider`. Navigate to `Cider Cljs Lein Repl` and set the value to `Figwheel-sidecar`. You should now be able to `C-c M-J` or `M-x cider-jack-in-clojurescript` from a Clojure or ClojureScript file in your project to launch Clojure and ClojureScript REPLs and start up Figwheel's hot-code reloading. Commands such as `C-c C-k` and `C-c M-n` should work intelligently with the appropriate REPL, depending on whether the current file is Clojure or ClojureScript.
+The website for this application is based on [minimal-webapp](https://github.com/raxod502/minimal-webapp); see that project for information about how to run it locally.
