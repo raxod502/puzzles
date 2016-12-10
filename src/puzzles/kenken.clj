@@ -38,7 +38,7 @@
   order starting from 0 in the upper-left corner, contained in the
   subgroup.
 
-  The second interal format is a simple vector of integers, where
+  The second internal format is a simple vector of integers, where
   the indexing scheme is the same one used for the values of the
   :cells vectors. A nonzero integer indicates a filled cell, while
   a zero indicates an empty cell.
