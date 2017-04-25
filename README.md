@@ -4,7 +4,8 @@
 
 ## Summary
 
-This library contains parsers and solvers for KenKen (`puzzles.kenken`) and Sudoku (`puzzles.sudoku`) puzzles.
+This library contains parsers and solvers for KenKen
+(`puzzles.kenken`) and Sudoku (`puzzles.sudoku`) puzzles.
 
 ## Example usage
 
@@ -57,9 +58,3 @@ puzzles.core> (println (sudoku/solve sample-sudoku/sample-1))
 564 921 873
 nil
 ```
-
-## Development
-
-The website for this application is based on [minimal-webapp](https://github.com/raxod502/minimal-webapp); see that project for information about how to run it locally.
-
-(In the future, in theory, the website would actually have a user interface from which you could use the solvers. It doesn't right now.)
